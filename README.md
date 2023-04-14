@@ -18,7 +18,12 @@ C:\Users\user\Downloads> <b>psql -U <usuario> -h localhost banco < banco.sql</b>
 5º Comprobamos que se ha creado la base de datos y las tablas correspondientes. Accedemos a postgres como en el primer paso y una vez dentro:
 Para listar las bases de datos: \l 
 
-Para ver el contenido de cada una de las tablas: <b>\c datos	\c historial</b>
+Si queremos ver el la configuración de cada elemento de la tabla: 
+<b>\d datos; 
+\d historial;</b>
+
+Para ver el contenido de cada una de las tablas: 
+<b>SELECT * FROM public.datos;</b>
 
 //////////////////////////////////////////////////////////////////////////////////
 
