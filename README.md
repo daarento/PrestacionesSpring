@@ -57,5 +57,5 @@ Estos archivos se localizan en la siguiente ruta:
   > **localhost:8080**
 
 
- * En caso de querer extraer el archivo **.WAR** de nuestro proyecto para hacer "deploy" en nuestro servidor.
+* En caso de querer extraer el archivo **.WAR** de nuestro proyecto para hacer "deploy" en nuestro servidor.
   > **Botón derecho sobre el proyecto > Export > WAR file > Destination (seleccionar la ubicación donde quieres que se te genere el .WAR)**
