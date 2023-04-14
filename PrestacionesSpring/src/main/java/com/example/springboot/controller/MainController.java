@@ -37,6 +37,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
+import com.example.springboot.config.MiConexion;
 import com.example.springboot.dao.HistorialDAO;
 import com.example.springboot.dao.PrestacionesDAO;
 import com.example.springboot.model.Historial;
