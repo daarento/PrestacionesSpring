@@ -1,11 +1,10 @@
 # PrestacionesSpring
-### Aplicación web realizada en Eclipse EE, empleando Spring Boot, servidor Tomcat, PostgreSQL como gestor de bases de datos y Java (jdkcomo lenguaje de programación.
+### Aplicación web realizada en Eclipse EE, empleando Spring Boot, servidor Tomcat, PostgreSQL como gestor de bases de datos y Java.
 
 El proyecto contiene:
   * PrestacionesSpring > aplicación web.
   * banco.sql > tablas (datos e historial) de la base de datos "banco". Hay que crear la base de datos antes de importar el fichero.
   * archivos .csv > para las pruebas.
-
 
 ## Pasos a seguir para instalar la base de datos "banco" a través del símbolo del sistema (cmd):
 
@@ -31,9 +30,8 @@ Si queremos ver el la configuración de cada elemento de la tabla:
 Para ver el contenido de cada una de las tablas: 
 <b>SELECT * FROM public.datos;</b>
 
-//////////////////////////////////////////////////////////////////////////////////
 
-Seguir estos pasos para abrir el proyecto en Eclipse y poder ejecutarlo:
+## Seguir estos pasos para abrir el proyecto en Eclipse y poder ejecutarlo:
 
 1º Abrir "Eclipse IDE for Enterprise Java and Web Developers" e instalar Spring Boot 4: Help > Eclipse Marketplace > <b>"Spring Boot 4 (aka Spring Tool Suite 4)"</b>
 
