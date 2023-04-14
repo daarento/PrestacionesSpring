@@ -365,6 +365,8 @@ public class MainController {
 	        HttpServletResponse response) {
 		
 		try {
+			 MiConexion miConexion = new MiConexion();
+			 Connection con = miConexion.getConnection();
 	         Statement stmt = con.createStatement();
 	         ResultSet rs = stmt.executeQuery("SELECT * FROM datos");
 	         
@@ -440,7 +442,7 @@ public class MainController {
 	         StreamResult result = new StreamResult(new File(path));
 	         transformer.transform(source, result);
 	         
-	         System.out.println("Los registros se han almacenado en el archivo registros.xml");
+	         System.out.println("Los registros se han almacenado en el archivo prestaciones.xml");
 	         	         
 	         //escribir la respuesta 
 	         OutputStream out = response.getOutputStream();
@@ -460,6 +462,7 @@ public class MainController {
 	         stmt.close();
 	         con.close();
 	      } catch (Exception e) {
+	    	  System.out.println("ERROR????? ");
 	         e.printStackTrace();
 	      }
 		  response.setContentType("application/octet-stream"); //para mostrar el contenido en web
