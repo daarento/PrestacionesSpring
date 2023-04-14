@@ -13,7 +13,7 @@ CREATE TABLE "public"."datos" (
     "cuantia" float4,
     "atraso" float8,
     "inactivo" bool DEFAULT false,
-    "id" int4 NOT NULL,
+    "id" int4 NOT NULL DEFAULT nextval('datos_id_seq'::regclass),
     PRIMARY KEY ("dni")
 );
 
