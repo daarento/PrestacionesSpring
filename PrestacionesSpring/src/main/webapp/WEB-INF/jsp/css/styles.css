@@ -1,0 +1,32 @@
+.centrar{
+	text-align: center;
+}
+.derecha{
+	text-align: right;
+}
+	
+.scroll{
+    max-width: 100%;
+    height: 500px;
+    overflow-y: scroll;
+}  
+
+.container-fluid{
+	margin-left: auto;
+	margin-right: auto;
+}
+    
+.responsive{
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+.margintop{
+    margin-top: 2vh;
+    background-color: crimson;
+}
+    
+.marginbot{
+    margin-bottom: 2vh;
+}
+    
