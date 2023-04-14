@@ -205,7 +205,7 @@
 							    			<c:set var="pares" value="${fn:split(historial.valoranterior, ',')}"/>
       										<c:forEach items="${pares}" var="par">
       										    <c:set var="claveValor" value="${fn:split(par, ':')}"/>
-      										    <b>${claveValor[0]}: </b>${claveValor[1]}<br>
+      										    <b>${claveValor[0]} </b>${claveValor[1]}<br>
       										</c:forEach>
     									</td>							    
 							    	</tr>
