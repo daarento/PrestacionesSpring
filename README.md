@@ -1,7 +1,13 @@
 # PrestacionesSpring
 ### Aplicación web realizada en Eclipse EE, empleando Spring Boot, servidor Tomcat, PostgreSQL como gestor de bases de datos y Java (jdkcomo lenguaje de programación.
 
-Pasos a seguir para instalar la base de datos "banco" a través del símbolo del sistema (cmd):
+El proyecto contiene:
+  * PrestacionesSpring > aplicación web.
+  * banco.sql > tablas (datos e historial) de la base de datos "banco". Hay que crear la base de datos antes de importar el fichero.
+  * archivos .csv > para las pruebas.
+
+
+## Pasos a seguir para instalar la base de datos "banco" a través del símbolo del sistema (cmd):
 
 1º Accedemos con nuestro usuario de postgres:
 <b>psql -U <usuario> -h localhost</b>
