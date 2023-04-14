@@ -1,3 +1,8 @@
+-- This script only contains the table creation statements and does not fully represent the table in the database. It's still missing: indices, triggers. Do not use it as a backup.
+
+-- Sequence and defined type
+CREATE SEQUENCE IF NOT EXISTS datos_id_seq;
+
 -- Table Definition
 CREATE TABLE "public"."datos" (
     "seguridadsocial" int8,
@@ -13,13 +18,18 @@ CREATE TABLE "public"."datos" (
     "cuantia" float4,
     "atraso" float8,
     "inactivo" bool DEFAULT false,
-    "id" int4 NOT NULL DEFAULT nextval('datos_id_seq'::regclass),
+    "id" int4 DEFAULT nextval('datos_id_seq'::regclass),
     PRIMARY KEY ("dni")
 );
 
+-- This script only contains the table creation statements and does not fully represent the table in the database. It's still missing: indices, triggers. Do not use it as a backup.
+
+-- Sequence and defined type
+CREATE SEQUENCE IF NOT EXISTS historial_id_seq;
+
 -- Table Definition
 CREATE TABLE "public"."historial" (
-    "id" int4 NOT NULL,
+    "id" int4 NOT NULL DEFAULT nextval('historial_id_seq'::regclass),
     "dni_registro" bpchar,
     "fecha" timestamp,
     "accion" bpchar,
@@ -29,7 +39,7 @@ CREATE TABLE "public"."historial" (
 );
 
 INSERT INTO "public"."datos" ("seguridadsocial", "dni", "nombre", "apellidos", "provincia", "calle", "numero", "codigopostal", "iban", "entidad", "cuantia", "atraso", "inactivo", "id") VALUES
-(88014420561, '19669426X', 'CARLES', 'DE MIGUEL ALCAIDE', 'ÁVILA', 'PASEO DE BARCELONA', 100, 5262, 'ES5901825888106723050078', 'BANKIA', 2023, 2002, 'f', 48);
+(55544477788, '11223344A', 'BLASFEM ', 'RAP', 'MADRID', 'SDAADASFASF', 1, 12, 'ES2021007313079700010099', 'SABADEL', 1, 1, 'f', 58);
 
 INSERT INTO "public"."historial" ("id", "dni_registro", "fecha", "accion", "valoranterior") VALUES
-(94, '19669426X', '2023-04-13 12:20:49', 'MODIFICAR', 'Nombre: CARLES');
+(134, '11223344A', '2023-04-14 11:51:43', 'DESACTIVADO', 'Se ha desactivado el registro.');

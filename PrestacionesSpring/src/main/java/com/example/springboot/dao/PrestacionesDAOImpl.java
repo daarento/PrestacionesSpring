@@ -27,7 +27,7 @@ public class PrestacionesDAOImpl implements PrestacionesDAO {
 	public int insertar(Prestaciones p) {
 		if(p.getSeguridadsocial() != 0) {
 			String sql = "INSERT INTO datos (seguridadsocial, dni, nombre, apellidos, provincia, calle, numero, codigopostal, iban, entidad, cuantia, atraso) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)";
-			return jdbcTemplate.update(sql, p.getSeguridadsocial(), p.getDni(), p.getNombre().toUpperCase(), p.getApellidos().toUpperCase(), p.getProvincia().toUpperCase(), p.getCalle().toUpperCase(), p.getNumero(), p.getCodigopostal(), p.getIban().toUpperCase(), p.getEntidad().toUpperCase(), p.getCuantia(), p.getAtraso());
+			return jdbcTemplate.update(sql, p.getSeguridadsocial(), p.getDni().toUpperCase(), p.getNombre().toUpperCase(), p.getApellidos().toUpperCase(), p.getProvincia().toUpperCase(), p.getCalle().toUpperCase(), p.getNumero(), p.getCodigopostal(), p.getIban().toUpperCase(), p.getEntidad().toUpperCase(), p.getCuantia(), p.getAtraso());
 		
 		} else { //si solo contiene 3 cabeceras (dni, nombre y apellidos) insertar el registro en la base de datos como inactivo
 			String sql = "INSERT INTO datos (dni, nombre, apellidos, inactivo) VALUES (?,?,?,?)";
