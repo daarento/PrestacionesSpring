@@ -39,7 +39,7 @@ CREATE TABLE "public"."historial" (
 );
 
 INSERT INTO "public"."datos" ("seguridadsocial", "dni", "nombre", "apellidos", "provincia", "calle", "numero", "codigopostal", "iban", "entidad", "cuantia", "atraso", "inactivo", "id") VALUES
-(55544477788, '11223344A', 'BLASFEM ', 'RAP', 'MADRID', 'SDAADASFASF', 1, 12, 'ES2021007313079700010099', 'SABADEL', 1, 1, 'f', 58);
+(55544477788, '11223344A', 'ANGEL', 'MARQUEZ VAQUERO', 'MADRID', 'CALLE NUEVA', 65, 25273, 'ES7701827029724388976366', 'BBVA', 200, 15, 'f', 1);
 
 INSERT INTO "public"."historial" ("id", "dni_registro", "fecha", "accion", "valoranterior") VALUES
-(134, '11223344A', '2023-04-14 11:51:43', 'DESACTIVADO', 'Se ha desactivado el registro.');
+(1, '11223344A', '2023-04-14 11:51:43', 'DESACTIVADO', 'Se ha desactivado el registro.');
