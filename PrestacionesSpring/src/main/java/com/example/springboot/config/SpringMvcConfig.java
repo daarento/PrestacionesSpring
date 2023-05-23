@@ -25,7 +25,7 @@ public class SpringMvcConfig implements WebMvcConfigurer {
 	public DataSource getDataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("org.postgresql.Driver");
-		dataSource.setUrl("jdbc:postgresql://localhost:5432/banco");
+		dataSource.setUrl("jdbc:postgresql://db:5432/banco");
 		dataSource.setUsername("postgres");
 		dataSource.setPassword("root");
 		
@@ -35,7 +35,7 @@ public class SpringMvcConfig implements WebMvcConfigurer {
 	@Bean
 	public ViewResolver getViewResolver() {
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-		resolver.setPrefix("/WEB-INF/jsp/");
+		//resolver.setPrefix("/WEB-INF/");
 		resolver.setSuffix(".jsp");
 		return resolver;
 	}

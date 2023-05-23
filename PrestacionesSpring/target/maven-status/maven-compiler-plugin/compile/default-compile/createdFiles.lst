@@ -1,0 +1,15 @@
+com\example\springboot\model\Prestaciones.class
+com\example\springboot\dao\PrestacionesDAOImpl.class
+com\example\springboot\dao\PrestacionesDAOImpl$1.class
+com\example\springboot\dao\HistorialDAOImpl$1.class
+com\example\springboot\PrestacionesSpringApplication.class
+com\example\springboot\dao\PrestacionesDAO.class
+com\example\springboot\dao\HistorialDAO.class
+com\example\springboot\config\WebAppInizializer.class
+com\example\springboot\config\MiConexion.class
+com\example\springboot\model\Historial.class
+com\example\springboot\dao\HistorialDAOImpl$2.class
+com\example\springboot\controller\MainController.class
+com\example\springboot\config\SpringMvcConfig.class
+com\example\springboot\dao\HistorialDAOImpl.class
+com\example\springboot\dao\PrestacionesDAOImpl$2.class

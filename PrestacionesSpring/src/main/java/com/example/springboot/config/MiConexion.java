@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 
 public class MiConexion {
 	static Connection con = null;
-	static String URL = "jdbc:postgresql://localhost:5432/banco";
+	static String URL = "jdbc:postgresql://db:5432/banco";
 	static String USER = "postgres";
 	static String PSSW = "root";
 	
